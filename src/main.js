@@ -9,6 +9,7 @@ Vue.config.productionTip = false
 
 Vue.mixin(GlobalMixins)
 Vue.prototype.$const = AppConstants
+Vue.config.productionTip = false
 
 new Vue({
   router,

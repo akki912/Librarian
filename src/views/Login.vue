@@ -7,7 +7,7 @@
             </v-avatar>
             <v-text-field label="Username" v-model="username"></v-text-field>
             <v-text-field label="Password" type="password" v-model="password"></v-text-field>
-            <v-btn block @click="authenticate()">Login</v-btn>
+            <v-btn block class = "base-inverted" @click="authenticate()">Log In</v-btn>
             </v-col>
     </v-row>
 
@@ -24,12 +24,13 @@ export default {
     },
 
     mdethods: {
-        authentication() {
-            alert:("Login Clicked")
-        }
-    },
+        authenticate() {
+            console.log(this.username);
+            alert(`username is ${this.username} password is ${this.password}`);
+        },
+    }
 
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -54,6 +54,21 @@
           Important Links
         </h2>
 
+
+        <v-row justify="center">
+          <a  
+            v-for="(next, i) in whatsNext"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-row>
+      </v-col>
+
+      <v-col>
         <v-row justify="center">
           <a
             v-for="(link, i) in importantLinks"
